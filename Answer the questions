@@ -19,7 +19,50 @@ Ideally, external validation is needed on data from another clinic, as distribut
 
 🔥 understands the system.
 
-Imagine:
+🔥can I upload ther real medical photo or not?
+
+
+👉 Technically, yes, the demo can accept an image file.
+
+But you should treat it as:
+only a technical experiment
+
+You should not use it for:
+
+real diagnosis
+medical decisions
+deciding if someone is healthy or sick
+treatment or triage in real life
+Why:
+
+it was trained on synthetic demo data, not real clinical data
+it is not clinically validated
+it is not approved medical software
+its output can be wrong or misleading on real medical images
+So the simple answer is:
+
+Can the website accept a real image file? Yes, probably.
+Should you trust the result for real health decisions? No.
+Also very important:
+do not upload private patient images unless you are sure they are fully anonymized and you are allowed to use them.
+
+Best safe use:
+
+demo images
+test images
+de-identified research samples
+learning how the pipeline works
+If you want, I can tell you:
+
+how to test with a non-private image safely
+how to improve the model for real research use
+how to make the upload button accept more image formats
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+👉 Imagine:
 
 Clinic A → Germany → new equipment, clear images
 Clinic B → India → old equipment and different contrast
