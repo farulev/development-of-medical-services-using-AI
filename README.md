@@ -64,8 +64,8 @@ A **regulatory-ready AI platform** that integrates into clinical workflows and p
 
 ## 🧪 Traction & Metrics (example / target)
 
-* 🎯 Diagnostic accuracy: G = 0.92 **
-* ⚡ Time reduction: **-40% per case**
+* 🎯 Diagnostic accuracy: ** G = 0.92 **
+* ⚡ Time reduction: **G = 0.40 per case**
 * 🏥 Pilot hospitals: **3–10**
 * 📊 Dataset size: **100K–1M+ studies**
 * 👨‍⚕️ Physician agreement rate: **>90%**
@@ -178,7 +178,7 @@ Not a standalone tool — embedded into:
 
 ---
 
-## 🚀 Roadmap
+##  Roadmap
 
 ### Phase 1 — MVP
 
@@ -239,13 +239,3 @@ We are looking for:
 Healthcare AI is not a software product.
 It is an **infrastructure layer for decision-making in medicine**.
 
----
-
-If you want, I can push this further into:
-
-* 🧬 **Pitch deck (Sequoia-style storytelling + slides)**
-* 💸 **Unit economics breakdown (CAC, LTV, margins)**
-* 🧠 **Technical architecture (PyTorch + DICOM + deployment stack)**
-* 🧲 **Branding like your CELLEON project (cyber-medical aesthetic)**
-
-Say the direction — and we go deeper.
