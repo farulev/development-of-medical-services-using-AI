@@ -1,3 +1,14 @@
+In that folder, find this file:
+launch_api_demo.bat
+
+Double-click launch_api_demo.bat
+
+A black window will open.
+Leave it open.
+
+Open your browser and go here:
+http://127.0.0.1:8000/docs
+
 You are in the right place - http://127.0.0.1:8000/docs
 
 Next do this:
