@@ -4,16 +4,26 @@ and integrating them into clinical practice. Unlike traditional AI projects, cli
 as well as the system's ability to seamlessly integrate with physicians' workflows, are key.
 
 How does the development of AI-based medical services proceed, from the initial problem definition to the final product's release into clinical practice?
-Data Collection. First, you should begin by collecting a massive dataset of real patients from the medical institutions where they have been treated. This will require:
+Data Collection. First, you should begin by collecting a massive dataset of real patients from the medical institutions where they have been treated. 
+This will require:
 identifying the problem and defining the diagnosis you want to work with;
 finding groups of doctors who will help you validate your model;
 assembling a development team that can build the model and train it.
 
-Anonymization. Before processing the data, it must be prepared. To do this, it must be anonymized: during this process, the patient is assigned a code, and personal information (full name, passport number, etc.) is removed. However, year of birth and diagnosis are not anonymized.
-Data Labeling. After the data has been anonymized, it is transferred to doctors for labeling. Before labeling, the doctors determine the methodology they will use to perform the labeling. They determine the diagnosis, symptoms, and the zones and markers they will work with. Only then do doctors manually label the images. Today, data labeling is typically done using software, where the doctor outlines the necessary zones in a special interface.
-Relabeling. After the initial data labeling, the same images undergo a similar procedure, performed by a different group of doctors. At this stage, questionable, controversial, or incorrect diagnoses are eliminated, as well as images that cannot be validated in the selected research model.
+Anonymization. Before processing the data, it must be prepared. To do this, it must be anonymized: during this process, the patient is assigned a code, 
+and personal information (full name, passport number, etc.) is removed. However, year of birth and diagnosis are not anonymized.
+Data Labeling. After the data has been anonymized, it is transferred to doctors for labeling. Before labeling, the doctors determine the methodology 
+they will use to perform the labeling. They determine the diagnosis, symptoms, and the zones and markers they will work with. Only then do doctors 
+manually label the images. Today, data labeling is typically done using software, where the doctor outlines the necessary zones in a special interface.
+Relabeling. After the initial data labeling, the same images undergo a similar procedure, performed by a different group of doctors. At this stage, 
+questionable, controversial, or incorrect diagnoses are eliminated, as well as images that cannot be validated in the selected research model.
 Neural network training. Once all images have been labeled, this dataset is sent to the developers, who begin training the neural network using it.
-Validation. Even if the service has reached a certain level of functionality, it cannot be immediately used in practice. Beforehand, it undergoes a validation phase: a group of doctors and a trained neural network are given new data to label. After this, the results obtained by the doctors and the neural network are compared, and the model is assigned an accuracy class. A model that achieves an accuracy rating above 90% can be considered as close to the work of a physician as possible.
+Validation. Even if the service has reached a certain level of functionality, it cannot be immediately used in practice. Beforehand, it undergoes a 
+validation phase: a group of doctors and a trained neural network are given new data to label. After this, the results obtained by the doctors and the 
+neural network are compared, and the model is assigned an accuracy class. A model that achieves an accuracy rating above 90% can be considered as close 
+to the work of a physician as possible.
 However, even in this case, the model cannot replace a qualified specialist.
-Registration with the Ministry of Health. Upon completion of the validation stage, the prototype must be registered with the Ministry of Health and receive registration approval. At this stage, an expert group—this time from the Ministry of Health—again carefully reviews the model and its algorithms.
-Integration into the healthcare system. Only if the service passes the Ministry of Health's review and receives registration approval can it be used in medical institutions.
+Registration with the Ministry of Health. Upon completion of the validation stage, the prototype must be registered with the Ministry of 
+Health and receive registration approval. At this stage, an expert group—this time from the Ministry of Health—again carefully reviews the model and its algorithms.
+Integration into the healthcare system. Only if the service passes the Ministry of Health's review and receives registration 
+approval can it be used in medical institutions.
