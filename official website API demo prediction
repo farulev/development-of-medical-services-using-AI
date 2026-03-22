@@ -1,0 +1,23 @@
+You are in the right place - http://127.0.0.1:8000/docs
+
+Next do this:
+
+Find POST /predict
+Click it
+Click Try it out
+Click Choose File
+Select this file:
+C:\Users\Forev\Documents\medical-ai-prototype\data\samples\images\sample_002_abnormal.pgm
+Click Execute
+Then you will see the result below, with:
+
+prediction
+confidence
+disclaimer
+Important:
+This is only a demo prediction, not real medical advice.
+
+If you want, after this I can tell you:
+
+how to test GET /health
+or how to use your own image next
