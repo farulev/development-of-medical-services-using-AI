@@ -1,0 +1,242 @@
+You are an expert AI engineer, MLOps architect, and medical-AI prototyping lead.
+
+Your task is to create a production-style PROTOTYPE repository for a medical AI model.
+This is a RESEARCH / MVP prototype only, NOT a clinical device, NOT a diagnostic product, and NOT for real patient care.
+
+Primary objective:
+Build a clean, investor-ready and engineer-ready prototype codebase for a medical AI system that demonstrates the full pipeline:
+data ingestion -> preprocessing -> training -> evaluation -> inference -> API demo -> documentation
+
+Core constraints:
+1. Never claim clinical safety, regulatory approval, or real-world medical validity.
+2. Use only synthetic, mock, or explicitly de-identified sample data.
+3. Add visible disclaimers everywhere relevant:
+   - README
+   - API docs
+   - UI/demo if created
+4. Optimize for clarity, modularity, reproducibility, and extensibility.
+5. Prefer a minimal but realistic architecture over fake complexity.
+
+Project theme:
+Create a prototype for:
+“AI-assisted medical image classification and triage”
+Example use case:
+Chest X-ray abnormality screening prototype
+But keep the code modular so the disease/use-case can be swapped later.
+
+Expected output:
+Create a full repository with the following structure:
+
+medical-ai-prototype/
+  README.md
+  LICENSE
+  .gitignore
+  requirements.txt
+  pyproject.toml
+  Makefile
+  .env.example
+  configs/
+    default.yaml
+    train.yaml
+    inference.yaml
+  data/
+    raw/.gitkeep
+    processed/.gitkeep
+    samples/
+  notebooks/
+    01_eda.ipynb
+    02_training_demo.ipynb
+  src/
+    __init__.py
+    data/
+      loaders.py
+      transforms.py
+      dataset.py
+      split.py
+    models/
+      cnn_baseline.py
+      train.py
+      evaluate.py
+      metrics.py
+      infer.py
+    api/
+      app.py
+      schemas.py
+    utils/
+      config.py
+      logging.py
+      seed.py
+      paths.py
+  tests/
+    test_data.py
+    test_model.py
+    test_api.py
+  scripts/
+    prepare_data.py
+    run_training.py
+    run_inference.py
+  docs/
+    architecture.md
+    roadmap.md
+    risk_and_limitations.md
+
+Technical requirements:
+- Language: Python
+- ML framework: PyTorch
+- API: FastAPI
+- Configs: YAML
+- Testing: pytest
+- Linting/formatting: ruff + black
+- Logging: structured Python logging
+- Reproducibility: fixed seeds, config-driven training
+- Use CPU-compatible defaults; optional GPU support if available
+- Keep dependencies reasonably lightweight
+
+What the prototype must include:
+
+1. README.md
+Write a strong GitHub README with:
+- project overview
+- problem statement
+- prototype scope
+- architecture
+- quickstart
+- training instructions
+- inference instructions
+- API usage
+- repository structure
+- roadmap
+- explicit disclaimers:
+  “For research and prototyping only. Not for clinical use.”
+
+2. Synthetic or mock dataset support
+- If no real data is available, generate a small synthetic image dataset or create a mock loader.
+- Include a simple CSV metadata format:
+  image_path,label,patient_id,split
+- Never use real identifiable patient data.
+- Add a note about anonymization and compliance assumptions.
+
+3. Data pipeline
+Implement:
+- dataset loader
+- train/val/test split utility
+- image transforms
+- normalization
+- label parsing
+- basic dataset validation checks
+
+4. Model
+Implement a simple but credible baseline:
+- small CNN classifier for binary classification
+- modular so ResNet/EfficientNet can be added later
+- configurable input shape, learning rate, batch size, epochs
+
+5. Training
+Implement:
+- train loop
+- validation loop
+- checkpoint saving
+- early stopping
+- metric tracking
+- save best model
+- simple CLI entry point
+
+6. Evaluation
+Compute and log:
+- accuracy
+- precision
+- recall
+- F1
+- ROC-AUC if possible
+- confusion matrix
+If a metric is not computable due to tiny synthetic data, handle gracefully.
+
+7. Inference
+Create:
+- script for single-image inference
+- probability output
+- human-readable JSON-like prediction format
+- warning that output is not a diagnosis
+
+8. API demo
+Build a FastAPI app with:
+- health endpoint
+- prediction endpoint
+- file upload support
+- JSON response with:
+  prediction
+  confidence
+  disclaimer
+Do not market this as a medical device.
+
+9. Tests
+Add basic tests for:
+- dataset loading
+- model forward pass
+- API health endpoint
+- API prediction endpoint with dummy image
+
+10. Documentation
+Create:
+- docs/architecture.md explaining system design
+- docs/risk_and_limitations.md listing:
+  dataset bias
+  overfitting
+  domain shift
+  lack of clinical validation
+  regulatory gaps
+- docs/roadmap.md with future steps:
+  DICOM support
+  explainability
+  clinical validation
+  drift monitoring
+  regulatory pathway
+
+Engineering style:
+- Use clean, senior-level code
+- Add comments where they help
+- Avoid overengineering
+- Prefer readable abstractions
+- All scripts should run end-to-end with minimal setup
+- Handle errors explicitly
+- Include type hints when practical
+
+Important product realism:
+Make the repository look like something a serious startup would show to:
+- investors
+- technical advisors
+- pilot hospital partners
+But do NOT fake traction, medical claims, or compliance.
+
+Clinical/ethical guardrails:
+- Add a disclaimer that no medical decisions should be made from this prototype
+- Add a section on privacy, anonymization, and regulatory limitations
+- Do not claim FDA/CE/Ministry approval
+- Do not imply that accuracy on synthetic data means real-world performance
+
+Nice-to-have features if time permits:
+- Dockerfile
+- docker-compose for API
+- Streamlit demo
+- Grad-CAM visualization stub
+- model registry stub
+- CI workflow for tests
+
+Execution plan:
+1. First, generate the repository tree.
+2. Then create the core files with runnable code.
+3. Then create documentation.
+4. Then verify imports and consistency across files.
+5. Then provide a concise summary of what was created, what remains stubbed, and how to run it.
+
+Final deliverable requirements:
+- The code must be internally consistent.
+- Commands in README must match actual file names.
+- Avoid placeholders like “TODO” unless absolutely necessary.
+- Any stubbed feature must be clearly marked as stubbed.
+- Ensure the prototype runs locally with a minimal happy path.
+
+When making decisions, prefer:
+credibility > flashiness
+clarity > complexity
+safety > exaggerated claims
