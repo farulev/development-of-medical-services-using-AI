@@ -1,0 +1,49 @@
+❓ "How did you validate the model?"
+
+👉 answer
+
+"I split the data into train and test, but I understand that this is insufficient. Ideally, external validation is needed on data from another clinic, as distribution shift is possible."
+
+❓ "Why CNN?"
+
+👉
+
+"This is a baseline model, suitable for local patterns and a limited dataset. Transformer requires more data and computation."
+
+❓ "What will happen with the other clinic?"
+
+👉
+
+"There is a risk of quality degradation due to domain shift. This is one of the key problems of medical AI."
+
+🔥 understands the system.
+
+Imagine:
+
+Clinic A → Germany → new equipment, clear images
+Clinic B → India → old equipment and different contrast
+
+👉 For a human its OK
+👉 For AI, these are two different worlds - risk!
+
+This is called:
+
+distribution shift
+
+I trained the model on 1000 images.
+
+Now:
+
+800 → training
+200 → testing
+
+It works well on these 200
+
+CNN:
+good at capturing local patterns (spots, textures)
+faster and easier
+works on small datasets
+Transformer:
+looks at the whole picture globally
+requires more data
+more complex
