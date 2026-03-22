@@ -1,3 +1,22 @@
+❓What photos I need to use?
+👉 answer 
+Use a chest X-ray style image, not a normal camera photo.
+
+Best choices right now:
+
+a chest X-ray image
+grayscale is best
+lungs/chest visible clearly
+no patient name, birth date, hospital name, or ID on the image
+file type like .png, .jpg, .jpeg, .bmp, .tif, or .pgm
+Do not use:
+
+selfie or body photo
+MRI or CT screenshot
+ultrasound photo
+image with private patient information
+anything for real diagnosis
+
 ❓ "How did you validate the model?"
 
 👉 answer
