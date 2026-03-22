@@ -2,7 +2,8 @@
 
 👉 answer
 
-"I split the data into train and test, but I understand that this is insufficient. Ideally, external validation is needed on data from another clinic, as distribution shift is possible."
+"I split the data into train and test, but I understand that this is insufficient. 
+Ideally, external validation is needed on data from another clinic, as distribution shift is possible."
 
 ❓ "Why CNN?"
 
